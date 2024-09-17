@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Mona+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <title>Tab Grouper</title>
+  <style>
+    html {
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    body {
+        font-family: 'Mona Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+      width: 250px;
+      background: rgb(67,38,115);
+      background: linear-gradient(339deg, rgb(37 16 73) 0%, rgb(131 46 203) 100%);
+      text-align: center;
+    }
+
+    .container {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h1 {
+      font-size: 14px;
+      text-align: left;
+      color: white;
+      font-weight: 500;
+    }
+
+
+    button {
+        background: none;
+        border: none;
+        color: white;
+    }
+
+    .status {
+      margin-top: 15px;
+      font-size: 14px;
+      color: #ededed;
+    }
+
+
+    .actions{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+        background-color: #4a2b6d;
+        color: white;
+        height: 105px;
+        width: 320px;
+        border-radius: 12px;
+        padding-right: 5px;
+    }
+    .group{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        cursor: pointer;
+    }
+    .header{
+        display: flex;
+        flex-direction: row;
+        gap: 7px;
+        justify-content: left;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .setting{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #4a2b6d;
+        color: white;
+        height: 185px;
+        width: 320px;
+        border-radius: 12px;
+        margin-top: 20px;
+        
+    }
+    .items{
+        display: flex;
+        flex-direction: row;
+        gap: 3px;
+        align-items: center;
+        margin-left: 15px;
+        margin-top: 15px;
+        cursor: pointer;
+    }
+    .imageI{
+        background-color: #683b9c;
+        border-radius: 50%;
+        height: 35px;
+        width: 35px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+        <div class="image"><img  width="24" height="24"  src="icons/binder36.png"></div>
+        <h1>Tab Grouper</h1>
+    </div>
+    <div class="actions">
+        <button id="group-tabs"> 
+         <div class="group">
+            <div class="icon"><img  width="45" height="35" src="icons/group.PNG"></div>
+            <div class="text">Group</div>
+        </div>
+        </button>
+    <button id="ungroup-tabs">
+        <div class="group" id="ungroup-tabs">
+            <div class="icon"><img  width="45" height="35" src="icons/ungroup.PNG"></div>
+            <div class="text">Ungroup</div>
+        </div>
+    </button>
+    <button id="sort-group-tabs">
+        <div class="group">
+            <div class="icon"><img width="45" height="35" src="icons/sort.png"></div>
+            <div class="text">Sort</div>
+        </div>
+    </button>
+    </div>
+    <div class="setting">
+        <button id="group-tabs">
+         <div class="items">
+            <div class="imageI"><img width="25" height="25" src="icons/theme.png"></div>
+             <div>Change color theme of tabs</div>
+         </div>
+        </button>
+        
+        <button id="group-tabs">
+        <div class="items">
+            <div class="imageI"><img width="25" height="25" src="icons/theme.png"></div>
+            <div>Change color theme of tabs</div>
+            
+            
+                    </div>
+        </button>
+        <button id="group-tabs">
+                    <div class="items">
+                        <div class="imageI"><img width="25" height="25" src="icons/theme.png"></div>
+                        <div>Change color theme of tabs</div>
+                        
+                        
+                                </div>
+        </button>   
+    </div>
+    <!-- <button id="group-tabs">Group Tabs by Domain</button>
+    <button id="ungroup-tabs">Ungroup All Tabs</button> -->
+    <div class="status" id="status-message"></div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
